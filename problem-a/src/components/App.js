@@ -35,8 +35,8 @@ function App(props) {
               <Route path="/" element={<PetList pets={pets} />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="resources" element={<ResourcesPage />} />
-              
               <Route path="adopt" element={<PetPage />}>
+                <Route path=":petName" element={<PetDetail />} />
                 <Route index element={<PetList pets={pets} />} />
               </Route>
               <Route path="*" element={<Navigate to="/adopt" replace />} />

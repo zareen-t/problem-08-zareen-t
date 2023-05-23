@@ -7,9 +7,9 @@ export function AboutNav() {
     <nav id="aboutLinks">
       <h2>About</h2>
       <ul className="list-unstyled">
-        <li><NavLink href="/adopt">Adopt a Pet</NavLink></li>
-        <li><NavLink href="/about">About Us</NavLink></li>
-        <li><NavLink href="/resources">Resources</NavLink></li>
+        <li><NavLink to="/adopt">Adopt a Pet</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
+        <li><NavLink to="/resources">Resources</NavLink></li>
       </ul>
     </nav>
   );
